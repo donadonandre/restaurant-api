@@ -3,12 +3,9 @@ package com.andredonadon.restaurantapi.entity
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 import java.math.BigInteger
-import java.util.UUID
 
-@Table("dishes")
-data class DishEntity(
-    @Id val id: UUID = UUID.randomUUID(),
-    val name: String,
-    val active: Boolean,
-    val dishCategoryId: BigInteger
+@Table("place_categories")
+data class PlaceCategoryEntity(
+    @Id val id: BigInteger? = null,
+    val description: String
 )
