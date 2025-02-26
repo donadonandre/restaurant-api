@@ -7,5 +7,4 @@ import java.util.*
 
 @Repository
 interface DishRepository : ReactiveCrudRepository<DishEntity, UUID> {
-    fun findByRestaurantId(restaurantId: UUID): MutableList<DishEntity>
 }

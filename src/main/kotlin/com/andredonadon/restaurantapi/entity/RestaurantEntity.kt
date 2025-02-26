@@ -11,5 +11,5 @@ data class RestaurantEntity(
     val name: String,
     val active: Boolean? = true,
     val cityId: BigInteger,
-    val placeCategoryId: BigInteger
+    val placeCategoryId: Int
 )
