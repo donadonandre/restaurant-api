@@ -19,5 +19,5 @@ class RestaurantController(private val restaurantService: RestaurantService) {
 
     @GetMapping("/{restaurantId}/dishes")
     fun getDishes(@PathVariable restaurantId: UUID): Flux<DishEntity> =
-        restaurantService.getDishesByRestaurant(restaurantId)
+        restaurantService.getDishesByRestaurantEntity(restaurantId)
 }
