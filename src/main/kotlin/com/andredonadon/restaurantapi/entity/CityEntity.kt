@@ -2,12 +2,11 @@ package com.andredonadon.restaurantapi.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
-import java.util.UUID
+import java.math.BigInteger
 
-@Table("restaurants")
-data class RestaurantEntity(
-    @Id val id: UUID = UUID.randomUUID(),
+@Table("cities")
+data class CityEntity(
+    @Id val id: BigInteger? = null,
     val name: String,
-    val active: Boolean? = true,
-    val cityId: Int
+    val state: String,
 )
